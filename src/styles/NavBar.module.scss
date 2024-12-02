@@ -1,0 +1,97 @@
+@use "../styles/variables.scss" as *;
+
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+    background-color: $black-tertiary;
+    height: 72px;
+}
+
+.leftSection {
+    display: flex;
+    align-items: center;
+
+    .menuContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 72px;
+        height: 72px;
+        background-color: $black-quaternary;
+        cursor: pointer;
+        .hamburgerMenu {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+    }
+  
+    .logoContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        .logo {
+            margin-left: 1rem;
+        }
+    }
+  
+    .divider {
+      width: 1px;
+      height: 2rem;
+      background-color: $gray-primary;
+      margin: 0 1rem;
+    }
+  
+    .documentName {
+      font-size: 1.2rem;
+    }
+
+    .docName {
+        display: flex;
+        align-items: center;
+        .docNameText {
+            display: flex;
+            flex-direction: column;
+            padding-left: 1rem;
+            :nth-child(1) {
+                font-size: 0.9rem;
+                font-weight: 500;
+                color: $gray-primary;
+            }
+            :nth-child(2) {
+                font-size: 1rem;
+                font-weight: 500;
+                color: $white-primary;
+                margin-top: .2rem;
+            }
+        }
+    }
+}
+
+.rightSection {
+    display: flex;
+    align-items: center;
+
+    .saveButton {
+        background-color: $button;
+        width: 152px;
+        height: 40px;
+        color: $white-primary;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        cursor: pointer;
+        border-radius: 4px;
+        border: none;
+        font-size: 14px;
+        margin-left: 1.5rem;
+    }
+    .saveButton:hover {
+        background-color: $button-hover;
+    }
+
+}

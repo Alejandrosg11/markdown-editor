@@ -1,0 +1,32 @@
+@use "sass:math";
+
+/******************/
+/***** Colors *****/
+/******************/
+$button: #E46643;
+$button-hover: #F39765;
+
+$black-primary: #151619;
+$black-secondary: #1D1F22;
+$black-tertiary: #2B2D31;
+$black-quaternary: #35393F;
+
+$gray-primary: #5A6069;
+$gray-secondary: #7C8187;
+$gray-tertiary: #C1C4CB;
+$gray-quaternary: #E4E4E4;
+
+$white-primary: #FFFFFF;
+$white-secondary: #F5F5F5;
+
+/*****************/
+/*  Rem Formula  */
+/*****************/
+@function px-to-rem($px) {           
+    $rem-base: 16px;
+    @return #{math.div($px, $rem-base)}rem;
+}
+
+/***********/
+/*  Fonts  */
+/***********/
